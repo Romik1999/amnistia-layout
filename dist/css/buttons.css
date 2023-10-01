@@ -22,6 +22,7 @@
   width: 100%;
   border: none;
   border-radius: 15px;
+  text-transform: uppercase;
 }
 
 .btn:focus {
@@ -38,6 +39,17 @@
 .btn--blue-lite:hover {
   background: #0D4CD3;
   color: #E4ECFD;
+}
+
+.btn--blue {
+  background: #0D4CD3;
+  border: 1px solid #0D4CD3;
+  color: #FFF;
+}
+
+.btn--blue:hover {
+  background: transparent;
+  color: #0D4CD3;
 }
 
 @media screen and (max-width: 1441px) {

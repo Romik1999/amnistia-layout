@@ -17,6 +17,7 @@
   width: 100%;
   border: none;
   border-radius: 15px;
+  text-transform: uppercase;
 
   @media screen and (max-width: 1441px) {
     font-size: 18px;
@@ -33,14 +34,25 @@
     outline: none;
   }
 
-  &--blue-lite{
+  &--blue-lite {
     background: $blue-lite;
     color: $blue;
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.20);
 
-    &:hover{
+    &:hover {
       background: $blue;
       color: $blue-lite;
+    }
+  }
+
+  &--blue {
+    background: $blue;
+    border: 1px solid $blue;
+    color: #FFF;
+
+    &:hover {
+      background: transparent;
+      color: $blue;
     }
   }
 }
