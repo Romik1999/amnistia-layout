@@ -1,0 +1,99 @@
+@import "../../scss/colors.scss";
+
+.quiz {
+  &__call {
+    color: #0D4CD3;
+    font-size: 30px;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 20px;
+
+
+    @media screen and (max-width: 1441px) {
+      font-size: 26px;
+    }
+    @media screen and (max-width: 1025px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: 769px) {
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__offer {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    color: #0B1F33;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 7px 0;
+    position: relative;
+    width: fit-content;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 769px) {
+      font-size: 15px;
+      padding: 7px 15px;
+      margin-bottom: 15px;
+      max-width: 400px;
+      width: 100%;
+      justify-content: center;
+      box-sizing: border-box;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -35px;
+
+      width: calc(100% + 70px);
+      height: 100%;
+      border-radius: 0px 15px 15px 15px;
+      border: 1px solid #EE3F3F;
+
+      @media screen and (max-width: 769px) {
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+  }
+
+  &__button {
+    max-width: 270px;
+  }
+
+  &-question {
+    &__title {
+      color: #0B1F33;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+    }
+
+    &__items {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      max-width: 790px;
+      width: 100%;
+    }
+
+    &__item {
+      max-width: calc(50% - 10px);
+    }
+  }
+}
