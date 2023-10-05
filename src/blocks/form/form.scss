@@ -40,7 +40,8 @@
 
   &__wrapper {
     display: flex;
-    column-gap: 15px;
+    flex-direction: column;
+    row-gap: 15px;
 
     @media screen and (max-width: 992px) {
       column-gap: 10px;
@@ -66,8 +67,9 @@
     padding: 18px 20px;
     box-sizing: border-box;
     background-color: transparent;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 120%;
+    border: 1px solid var(--Gray-4, #BDBDBD);
 
     @media screen and (max-width: 1441px) {
       height: 55px;
@@ -133,6 +135,19 @@
       border-radius: 10px;
       font-size: 18px;
       text-align: center;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+
+    @media screen and (max-width: 769px) {
+      flex-direction: column-reverse;
+      row-gap: 10px;
+      max-width: 400px;
+      width: 100%;
     }
   }
 }

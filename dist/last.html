@@ -59,11 +59,11 @@
 </div>
 
 <main class="main">
-    <section class="quiz">
+    <section class="last">
     <div class="cont">
-        <div class="quiz__wrapper">
-            <div class="quiz__call">Пройдите опрос и мы отправим вам инструкцию:</div>
-            <div class="quiz__offer">
+        <div class="last__wrapper">
+            <div class="last__call">Пройдите опрос и мы отправим вам инструкцию:</div>
+            <div class="last__offer">
                 <svg width="33" height="35" v iewBox="0 0 33 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M32.7927 9.47167L23.8759 0.206309C23.749 0.0745117 23.5739 0 23.3909 0H10.1012C8.6139 0 7.40387 1.20955 7.40387 2.69623V12.1154H2.01804C0.905283 12.1154 0 13.0204 0 14.1329V24.2326C0 25.345 0.905283 26.25 2.01804 26.25H7.40387V32.3085C7.40387 33.7926 8.6139 35 10.1012 35H30.2835C31.7708 35 32.9808 33.7933 32.9808 32.31V9.93843C32.9808 9.76438 32.9133 9.59711 32.7927 9.47167ZM23.5577 1.81706L30.8776 9.42307H23.5577V1.81706ZM2.01804 24.9039C1.64753 24.9039 1.3462 24.6027 1.3462 24.2326V14.1329C1.3462 13.7627 1.6476 13.4615 2.01804 13.4615H20.1936C20.5641 13.4615 20.8654 13.7627 20.8654 14.1329V24.2326C20.8654 24.6027 20.564 24.9039 20.1936 24.9039H2.01804ZM31.6346 32.31C31.6346 33.051 31.0285 33.6539 30.2834 33.6539H10.1012C9.35614 33.6539 8.75 33.0504 8.75 32.3086V26.25H20.1936C21.3063 26.25 22.2116 25.345 22.2116 24.2326V14.1329C22.2116 13.0204 21.3063 12.1154 20.1936 12.1154H8.75V2.69623C8.75 1.95173 9.35614 1.34613 10.1012 1.34613H22.2115V10.0961C22.2115 10.4679 22.5129 10.7692 22.8846 10.7692H31.6346V32.31Z"
                           fill="#0B1F33"/>
@@ -76,33 +76,32 @@
                 </svg>
                 «Полный план по списанию долгов»
             </div>
-            <div class="quiz__question">
-                <div class="quiz-question">
-                    <h2 class="quiz-question__title">Какая у Вас общая сумма долга по всем Вашим кредитам и
-                        задолженностям?</h2>
-                    <div class="quiz-question__items">
-                        <label class="quiz-question__item">
-                            <input class="quiz-question__input" type="radio" name="quiz">
-                            <span class="quiz-question__text">От 250 000 до 500 000 руб</span>
-                        </label>
-                        <label class="quiz-question__item">
-                            <input class="quiz-question__input" type="radio" name="quiz">
-                            <span class="quiz-question__text">От 500 000 ₽ до 1 000 000 ₽</span>
-                        </label>
-                        <label class="quiz-question__item">
-                            <input class="quiz-question__input" type="radio" name="quiz">
-                            <span class="quiz-question__text">От 1 000 000 ₽ и выше</span>
-                        </label>
+            <div class="last__form">
+                <div class="last-form">
+                    <h2 class="last-form__title">Заполните контактные данные и получите «Полный план по списанию долгов»</h2>
+                    <div class="last-form__form">
+                        <form class="form">
+                            <div class="form__wrapper">
+                                <label class="form__field">
+                                    <input class="form__input" placeholder="Ваше имя">
+                                </label>
+                                <label class="form__field">
+                                    <input class="form__input" placeholder="+7 (___) ___ - __ - __"
+                                           onkeypress="maskPhone(event)"
+                                           onpaste="onPastePhone(event)">
+                                </label>
+                                <div class="form__buttons">
+                                    <button class="form__button btn btn--border last__button--back">Назад</button>
+                                    <button class="form__button btn btn--blue last__button--next">Отправить</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-            <div class="quiz__buttons">
-                <button class="quiz__button btn btn--border quiz__button--back">Назад</button>
-                <button class="quiz__button btn btn--blue quiz__button--next">Далее</button>
-            </div>
         </div>
     </div>
-    <div class="quiz__image">
+    <div class="last__image">
         <img src="./img/hero/hero-img.png" alt="hero">
     </div>
 </section>

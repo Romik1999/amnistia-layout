@@ -41,16 +41,20 @@
   }
 
   &__wrapper {
-    max-width: 685px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 830px;
     width: 100%;
-    margin: auto;
-    position: relative;
-
+    min-height: 500px;
+    flex-shrink: 0;
     border-radius: 15px;
-    background: var(--unnamed, #222);
-    box-shadow: 0px 5px 10px 0px rgba(18, 18, 18, 0.45), 0px 2px 3px 0px rgba(0, 0, 0, 0.70);
-    padding: 80px 30px;
+    border: 1px solid rgba(11, 31, 51, 0.50);
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(11, 31, 51, 0.20);
     box-sizing: border-box;
+    padding: 20px 50px;
+    position: relative;
 
     @media screen and (max-width: 1441px) {
       max-width: 580px;
@@ -64,10 +68,15 @@
     }
   }
 
+  &__inner {
+    max-width: 561px;
+    width: 100%;
+  }
+
   &__close {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 30px;
+    right: 30px;
 
     width: 30px;
     height: 30px;
@@ -87,52 +96,39 @@
   }
 
   &__title {
-    color: var(--unnamed, #F3F3F3);
+    color: #EE3F3F;
     text-align: center;
-    font-size: 45px;
-    font-weight: 700;
-    line-height: 120%;
-    margin-bottom: 18px;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin-bottom: 20px;
 
     @media screen and (max-width: 1441px) {
-      font-size: 40px;
+
     }
     @media screen and (max-width: 1025px) {
-      font-size: 30px;
+
     }
     @media screen and (max-width: 769px) {
-      font-size: 25px;
-      max-width: 265px;
-      width: 100%;
-      margin: 0 auto;
-      margin-bottom: 10px;
+
     }
   }
 
   &__subtitle {
-    color: var(--unnamed, #F3F3F3);
+    color: #0B1F33;
     text-align: center;
-    font-size: 20px;
-    line-height: 120%;
-    max-width: 505px;
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 38px;
+    font-size: 25px;
+    margin-bottom: 30px;
 
     @media screen and (max-width: 1441px) {
-      font-size: 18px;
-      margin-bottom: 30px;
-      max-width: 420px;
+
     }
     @media screen and (max-width: 1025px) {
-      font-size: 16px;
-      margin-bottom: 15px;
-      max-width: 366px;
+
     }
     @media screen and (max-width: 769px) {
-      font-size: 15px;
-      margin-bottom: 10px;
-      max-width: 290px;
+
     }
   }
 
